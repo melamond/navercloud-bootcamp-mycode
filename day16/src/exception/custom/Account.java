@@ -6,7 +6,7 @@ public class Account {
         return this.balance;
     }
 
-    public void deposit(int money){
+    public void deposit(int money) throws DepositMinusMoneyException{
         if(money < 0){
             throw new DepositMinusMoneyException("1원 미만의 금액을 입금할 수 없습니다");
         }
