@@ -46,7 +46,7 @@ public class Lottery {
                 howManyDoYouBuyLottery++;
             }
             Collections.sort(myLottery); // 복권 번호 순서 정렬
-           // System.out.println(myLottery);
+            // System.out.println(myLottery); // 잘 사고 있는지 확인용
         }
         int howMuchDoYouSpentMoneyLottery = howManyDoYouBuyLottery * 5000;
         System.out.println("당첨 되었습니다 ! 당첨 번호 : "+lottery);
