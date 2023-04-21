@@ -48,7 +48,7 @@ public class Lottery {
             Collections.sort(myLottery); // 복권 번호 순서 정렬
             // System.out.println(myLottery); // 잘 사고 있는지 확인용
         }
-        int howMuchDoYouSpentMoneyLottery = howManyDoYouBuyLottery * 5000;
+        long howMuchDoYouSpentMoneyLottery = (long)howManyDoYouBuyLottery * 5000;
         System.out.println("당첨 되었습니다 ! 당첨 번호 : "+lottery);
         System.out.println("당신이 산 복권 번호 : "+myLottery);
         System.out.println("당신이 여태까지 산 복권의 개수를 기억하시나요? : "+howManyDoYouBuyLottery);
