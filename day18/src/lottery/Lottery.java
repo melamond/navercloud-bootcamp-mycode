@@ -1,6 +1,7 @@
 package lottery;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -27,9 +28,9 @@ public class Lottery {
             if (lottery.contains(winningNumber)){ // 이전 번호와 중복이면
                 continue;
             }
-            lottery.add(winningNumber);
+            lottery.add(winningNumber); // 복권 번호 순서 정렬
         }
-
+        Collections.sort(lottery);
         // ---------------------
 
         int howManyDoYouBuyLottery = 0;
@@ -44,6 +45,7 @@ public class Lottery {
                 myLottery.add(boughtNumber);
                 howManyDoYouBuyLottery++;
             }
+            Collections.sort(myLottery); // 복권 번호 순서 정렬
            // System.out.println(myLottery);
         }
         int howMuchDoYouSpentMoneyLottery = howManyDoYouBuyLottery * 5000;
